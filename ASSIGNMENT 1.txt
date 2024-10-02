@@ -1,0 +1,74 @@
+1.  select productid,name,color,listprice
+    from production.product
+
+
+2.  select productid,name,color,listprice
+    from production.product
+    where listprice !='0'
+
+3. select productid,name,color,listprice
+   from production.product
+   where color is null
+
+4. select productid,name,color,listprice
+   from production.product
+   where color is not null
+
+5.  select productid,name,color,listprice
+    from production.product
+    where color is not null AND listprice > 0
+
+6.  select name,color
+    from production.product
+    where color is null
+
+7a. select name,color
+    from production.product
+    where name='LL Crankarm' AND color='Black'
+
+7b. select name,color
+    from production.product
+    where name='ML Crankarm' AND color='Black'
+
+7c. select name,color
+    from production.product
+    where name='HL crankarm'and color='black'
+
+7d. select name,color
+    from production.product
+    where name='chainring nut'and color='silver'
+
+7e. select name,color
+    from production.product
+    where name='chainring'and color='black'
+
+8.  select productid,name
+    from production.product
+    where productid >= 400 AND productid <= 500
+
+
+9.  select Productid,name,color
+    from production.product
+    where color='black' OR color ='blue'
+
+10. select Productid,name,color
+    from production.product
+    where name like 's%'
+
+11. select name,listprice
+    from production.product
+    order by name
+
+12. select name,listprice
+    from production.product
+    where name like 'A%' OR name like'S%'
+    order by name
+
+13. select name
+    from production.product
+    where name like 'spo[^k]%'
+    order by name
+
+14. select DISTINCT color
+    from production.product
+    order by color desc
